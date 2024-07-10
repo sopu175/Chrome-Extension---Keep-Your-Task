@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keep Your Task</title>
+    <style>
+        body {
+            width: 300px;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: auto;
+            padding: 0;
+            background-color: transparent;
+            color: black;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        button:hover {
+            background-color: #357AE8;
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            align-items: center;
+        }
+
+        .task-item button {
+            background-color: transparent;
+            border: none;
+            color: black;
+            cursor: pointer;
+            width: auto;
+            text-align: left;
+            text-decoration: underline;
+            padding: 0;
+        }
+
+        .fixed-text{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 9px;
+            font-weight: 400;
+            color: blue;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Keep Your Tasks</h1>
+<input type="text" id="taskInput" placeholder="New Task">
+<button id="addTaskButton">Add Task</button>
+<div id="taskList"></div>
+
+
+<a href="http://devsopu.com" class="fixed-text" target="_blank">Created by Saif</a>
+<script src="popup.js"></script>
+</body>
+</html>
